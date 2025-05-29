@@ -8,12 +8,30 @@ class Cliente
 
     public function comprar()
     {
-       echo "o cliente realizou uma compra";
-    
+       echo "o cliente {$this->nome} realizou uma compra";
     }
-
-    public function cadastro()
+    public function definirNome($nomeClasse2)
     {
-      echo "o cliente realizou um cadastro na loja";
+        $this ->nome = $nome;
     }
-}
+    public function reembolso()
+    {
+      echo "o cliente {$this->nome} pediu um reembolso";
+    }
+    public function atendimento()
+    {
+       echo "o cliente {$this->nome} foi atendido";
+    }
+   
+    public function pedido()
+    {
+       echo "o cliente {$this->nome} fez um pedido online";
+    }
+  
+    public function saiu()
+    {
+       echo "o cliente {$this->nome} saiu da loja";
+    }
+    }
+  
+ 
